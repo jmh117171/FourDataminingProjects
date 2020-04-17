@@ -31,28 +31,7 @@ if __name__=="__main__":
         kernelMatrix.append(kernelVector)
     kernelMatrix = np.array(kernelMatrix)
 
-    #计算高维空间点中心化后的核矩阵
-    # sum_all = 0
-    # for i in range(len(kernelMatrix)):
-    #     for j in range(len(kernelMatrix[i])):
-    #         sum_all += kernelMatrix[i][j]
-    # temp_kernelMatrix = []
-    # n = len(kernelMatrix)
-    # for i in range(len(kernelMatrix)):
-    #     temp_kernelVector = []
-    #     for j in range(len(kernelMatrix[i])):
-    #         sum1 = 0
-    #         sum2 = 0
-    #         for k in range(len(kernelMatrix[i])):
-    #             sum1 += kernelMatrix[i][k]
-    #             sum2 += kernelMatrix[j][k]
-    #         temp_kernelVector.append(kernelMatrix[i][j] - (1/n)*sum1 - (1/n)*sum2 + (1/(n*n))*sum_all)
-    #         # kernelMatrix[i][j] = kernelMatrix[i][j] - (1/n)*sum1 - (1/n)*sum2 + (1/(n*n))*sum_all     #这样写会改变现有的值，影响后面计算
-    #     temp_kernelMatrix.append(temp_kernelVector)
-    # kernelMatrix = np.array(temp_kernelMatrix)
-
     # 计算高维空间点中心化后的核矩阵
-    #https://zhuanlan.zhihu.com/p/59775730
     n = len(kernelMatrix)
     #temp_matrix初始化，每个位置的值都为1/n
     temp_matrix = []

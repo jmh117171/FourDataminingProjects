@@ -141,14 +141,6 @@ def findLocalMaximum(attractor_set,attractor_dic,attractor_label_dic):
         # 将一个类簇中的所有点和标签添加到最终结果的集合中
         cluster_result.append(temp_result)
         cluster_label_result.append(temp_label_result)
-
-    # for bbb in cluster_result:
-    #     print(bbb)
-    #     print(len(bbb))
-    #
-    # for ccc in cluster_label_result:
-    #     print(ccc)
-    #     print(len(ccc))
     return cluster_set, cluster_result, cluster_label_result
 
 

@@ -89,10 +89,6 @@ if __name__=="__main__":
           "and its value is " + str(max(varianceVector)))
 
     #Which pair of attributes has the largest covariance, and which pair of attributes has the smallest covariance? Print these values.
-    # posMax = np.unravel_index(np.argmax(covarianceMatrix), covarianceMatrix.shape)
-    # print(posMax)
-    # posMin = np.unravel_index(np.argmin(covarianceMatrix), covarianceMatrix.shape)
-    # print(posMin)
     maxIndex_row = 0
     maxIndex_col = 1
     minIndex_row = 0
